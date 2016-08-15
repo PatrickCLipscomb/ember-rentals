@@ -1,0 +1,17 @@
+{{#if updateAnnouncementForm}}
+  <h4>Update {{announcement.announcer}}'s announcement'</h4>
+  <form>
+    <div class="form-group">
+      <label for="owner">Owner</label>
+      {{input value=owner id="owner" placeholder=rental.owner}}
+    </div>
+
+    <div class="form-group">
+      <label for="type">Type</label>
+      {{input value=type id="type" placeholder=rental.type}}
+    </div>
+    <button class="btn btn-danger"{{action 'update' announcement}}>Update!</button>
+  </form>
+{{else}}
+  <button {{action 'updateAnnouncementForm'}} class="btn btn-info">Update</button>
+{{/if}}

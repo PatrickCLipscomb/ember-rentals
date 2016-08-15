@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('contact');
   this.route('announcement');
   this.route('rental', {path: '/rental/:rental_id'});
+  this.route('singleAnnouncement');
 });
 
 export default Router;
