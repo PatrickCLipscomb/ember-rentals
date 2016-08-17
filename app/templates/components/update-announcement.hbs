@@ -1,16 +1,16 @@
 {{#if updateAnnouncementForm}}
-  <h4>Update {{announcement.announcer}}'s announcement'</h4>
+  <h4>Update {{model.announcer}}'s announcement'</h4>
   <form>
     <div class="form-group">
-      <label for="owner">Owner</label>
-      {{input value=owner id="owner" placeholder=rental.owner}}
+      <label for="announcer">Announcer</label>
+      {{input value=announcer id="announcer" placeholder=model.announcer}}
     </div>
 
     <div class="form-group">
-      <label for="type">Type</label>
-      {{input value=type id="type" placeholder=rental.type}}
+      <label for="text">Text</label>
+      {{input value=text id="text" placeholder=model.text}}
     </div>
-    <button class="btn btn-danger"{{action 'update' announcement}}>Update!</button>
+    <button class="btn btn-danger"{{action 'update' model}}>Update!</button>
   </form>
 {{else}}
   <button {{action 'updateAnnouncementForm'}} class="btn btn-info">Update</button>

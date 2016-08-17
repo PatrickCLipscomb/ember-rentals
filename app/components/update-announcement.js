@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  updateAnnouncementForm: false;
+  updateAnnouncementForm: false,
   actions: {
     updateAnnouncementForm() {
       this.set('updateAnnouncementForm', true);

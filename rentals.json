@@ -27,5 +27,12 @@
   }, {
     "text": "only torches allowed",
     "announcer": "PyroGuy"
-  }]
+  }],
+  "cities": [{
+    "name": "Portland",
+    "country": "USA"
+  }, {
+    "name": "Seattle",
+    "country": "USA"
+    }]
 }

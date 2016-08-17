@@ -8,7 +8,7 @@ export default Ember.Route.extend({
     destroyAnnouncement(announcement) {
       announcement.destroyRecord();
       this.transitionTo('announcement');
-    }
+    },
     update(announcement, params) {
       Object.keys(params).forEach(function(key) {
         if (params[key] !== undefined) {
@@ -16,7 +16,7 @@ export default Ember.Route.extend({
         }
       });
       announcement.save();
-      this.transitionTo('announcement')
+      this.transitionTo('announcement');
     }
   }
 });
