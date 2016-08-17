@@ -12,7 +12,7 @@
 
 <ul>
   {{#each model.cities as |city|}}
-    <li>{{city.name}}, {{city.country}}</li>
+    <li>{{#link-to 'city' city.id}}{{city.name}}, {{city.country}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
@@ -23,3 +23,5 @@
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
 {{#link-to 'announcement'}}See Announcements{{/link-to}}
+
+{{#link-to 'index'}}Home Page{{/link-to}}

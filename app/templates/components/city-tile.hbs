@@ -1,10 +1,16 @@
 <p>
-  {{model.name}}'s Details
+  {{city.name}}'s Details
 </p>
 <p>
-  Country: {{model.country}}
+  Country: {{city.country}}
 </p>
 <hr>
 <p>
-  Rentals available in {{model.name}}:
+  Rentals available in {{city.name}}:
 </p>
+<ul>
+  {{#each city.rentals as |rental|}}
+    <li>{{rental.owner}}'s {{rental.type}}'</li>
+  {{/each}}
+</ul>
+<button {{action 'destroyCity' city}}>Destroy City.</button>
